@@ -3,21 +3,25 @@
 class Star
 {
  //variables
+  int Hab;
+  String DisplayName;
+  int Distance;
+  int Xg;
+  int Yg;
+  int Zg;
+  int AbsMag;
 
  
  
- Star( )
+ Star(int Hab, String DisplayName, int Distance, int Xg, int Yg, int Zg, int AbsMag)
  {
-
- }
- 
- void run()
- {
-   display();
- }//end run
-  
- void display()
-  {
-
-  }//end display()
-}//end Button
+    this.Hab = Hab;
+    this.DisplayName = DisplayName;
+    this.Distance = Distance;
+    this.Xg = Xg;
+    this.Yg = Yg;
+    this.Zg = Zg;
+    this.AbsMag = AbsMag;
+ }//end Star()
+}
+}
