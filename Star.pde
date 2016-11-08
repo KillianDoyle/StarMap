@@ -11,17 +11,20 @@ class Star
   int Zg;
   int AbsMag;
 
- 
- 
- Star(int Hab, String DisplayName, int Distance, int Xg, int Yg, int Zg, int AbsMag)
- {
-    this.Hab = Hab;
-    this.DisplayName = DisplayName;
-    this.Distance = Distance;
-    this.Xg = Xg;
-    this.Yg = Yg;
-    this.Zg = Zg;
-    this.AbsMag = AbsMag;
- }//end Star()
-}
+   Star(int Hab, String DisplayName, int Distance, int Xg, int Yg, int Zg, int AbsMag)
+   {
+      this.Hab = Hab;
+      this.DisplayName = DisplayName;
+      this.Distance = Distance;
+      this.Xg = Xg;
+      this.Yg = Yg;
+      this.Zg = Zg;
+      this.AbsMag = AbsMag;
+   }
+   
+  //To string method
+  String toString()
+  {
+    return Hab + "\t" + DisplayName + "\t" + Distance + "\t" + Xg + "\t" + Yg + "\t" + Zg  + "\t" + AbsMag;
+  }
 }
